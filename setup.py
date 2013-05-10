@@ -1,17 +1,14 @@
 #!/usr/bin/env python
 
-import os
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
-README = open(os.path.join(os.path.dirname(__file__), 'README.md')).readlines()
-
-os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
+README = open('README.md').readlines()
 
 setup(
     name='django-favorite',
     version='0.0.1',
-    packages=['favorite'],
+    packages=find_packages(),
     include_package_data=True,
     license='MIT License',
     description=README[2].rstrip('\n'),
