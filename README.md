@@ -2,6 +2,10 @@
 
 A simple reusable app for django that makes it easy to have a favorite button for any model.
 
+## Installation
+
+    $ pip install django-favorite
+
 ## Usage
 
 First off, include its css/js file
