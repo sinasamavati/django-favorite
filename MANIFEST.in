@@ -1,0 +1,2 @@
+include setup.py README.md LICENSE
+recursive-include favorite *.py *.html *.js *.css
