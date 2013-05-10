@@ -4,20 +4,21 @@ A simple reusable app for django that makes it easy to have a favorite button fo
 
 ## Usage
 
-  First off, include its css/js file
+First off, include its css/js file
 
-  ```html
-  <link rel="stylesheet" href="{% static 'css/favorite.css' %}">
+```html
+<link rel="stylesheet" href="{% static 'css/favorite.css' %}">
 
-  <!-- inside your javascript block -->
-  <script src="{% static 'js/favorite.js' %}"></script>
-  ```
+<!-- inside your javascript block -->
+<script src="{% static 'js/favorite.js' %}"></script>
+```
 
-  and then
+and then
 
-  ```html
-  {% load favorite_tags %}
-  {% for comment in post.comments %}
-    {% favorite_button comment %}
-  {% endfor %}
-  ```
+```
+{% load favorite_tags %}
+
+{% for comment in post.comments %}
+  {% favorite_button comment %}
+{% endfor %}
+```
